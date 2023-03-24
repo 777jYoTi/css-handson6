@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.maincon1 {
+    background: url(./shara\ desert.jpg);
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ab {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.list ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.menu img {
+
+    height: 30px;
+}
+
+.ac {
+    display: flex;
+
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 90px;
+
+}
+
+.sahara {
+    font-size: 40px;
+    width: 500px;
+    line-height: 40px;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    color: beige;
+
+
+}
+
+.box1 {
+    background-size: cover;
+    background-image: url(./pic-1.png);
+    border-radius: 10px;
+    border: 0px solid;
+    height: 200px;
+    width: 200px;
+}
+
+.box2 {
+    background-size: cover;
+    background-image: url(./pic-2.png);
+    border-radius: 10px;
+    border: 0px solid;
+    height: 200px;
+    width: 200px;
+}
+
+.box3 {
+    background-size: cover;
+    background-image: url(./pic-3.png);
+    border-radius: 10px;
+    border: 0px solid;
+    height: 200px;
+    width: 200px;
+}
+
+.box4 {
+    background-size: cover;
+    background-image: url(./pic-4.png);
+    border-radius: 10px;
+    border: 0px solid;
+    height: 200px;
+    width: 200px;
+}
+
+.jyoti:hover {
+    transform: translateY(-7px);
+}
+
+.lorem {
+    font-size: medium;
+    line-height: 5px;
+    color: white;
+}
+
+.explore {
+    font-size: small;
+    text-align: center;
+    border: 0px solid white;
+    background-color: white;
+    width: 30%;
+    border-radius: 50px;
+    color: black;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+
+    .ac {
+        flex-direction: column;
+       
+    }
+
+    .box1 {
+        grid-row: 1/2;
+    }
+
+    .box2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .box3 {
+        grid-row: 3/4;
+    }
+
+    .box4 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .list ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .ac {
+        display: flex;
+
+        justify-content: space-between;
+        margin-left: 140px;
+        margin-right: 140px;
+        margin-top: 100px;
+    }
+
+}
+@media screen and (min-width:500px) and (max-width:1100px){
+   
+    .ac {
+        flex-direction: column;
+       
+        justify-content:center ;
+        /* margin-left: 0px;
+        margin-right: 0px; */
+      
+    }
+    /* .sahara{
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .grid{
+        margin-left: 0px;
+    } */
+
+    .box1 {
+        grid-row: 1/2;
+        background-position:center;
+        width: 500px;
+    }
+
+    .box2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-position:center;
+        width: 500px;
+    }
+
+    .box3 {
+        grid-row: 3/4;
+        background-position:center;
+        width: 500px;
+    }
+
+    .box4 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        background-position:center;
+        width: 500px;
+    }
+    
+    
+}
